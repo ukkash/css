@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static</title>
+    <style>
+        .static1{
+            background-color: lightskyblue;
+            padding: 20px;
+            position: static;  /*default positioning -- u can even remove this line */
+        }
+        .static2{
+            background-color: lightcoral;
+            padding: 20px;
+            position: static;
+            top: 50px;  /*this will not have any response to code*/
+            left: 50px;  /*this will not have any response to code*/
+        }
+    </style>
+</head>
+<body>
+    <!-- positioned according to normal document flow
+    it doesnit respond to top,right,bottom,
+    it doesnt overlap other elements -->
+
+    <div class="static1">Box-1-static</div>
+    <div class="static2">Box-2-static(top/left has no effect)</div>
+</body>
+</html>
