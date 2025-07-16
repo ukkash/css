@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        
+
+        
+        .grid-container{
+            display: grid;
+            margin-top: 50px;
+            margin-left: 300px;
+            margin-right: 300px;
+            padding: 10px;
+            height: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 60px 4fr 4fr 60px;
+            grid-gap: 10px;
+            background-color: rgb(63, 61, 63);
+        }
+        .header{
+            padding: 10px;
+            background-color: blueviolet;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+            border: 4px solid black;
+            font-family: cursive;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+        }
+        .sidebar{
+            background-color: rgb(44, 233, 230);
+            text-align: center;
+            line-height: 300px;
+            color: white;
+            padding: 10px;
+            font-family: cursive;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            border: 4px solid black;
+            
+
+        }
+        .content-1{
+            background-color: blue;
+            text-align: center;
+            line-height: 150px;
+            color: white;
+            padding: 10px;
+            font-family: cursive;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            border: 4px solid black;
+            
+
+        }
+        .content-2{
+             background-color: blue;
+            text-align: center;
+            line-height: 150px;
+            color: white;
+            padding: 10px;
+            font-family: cursive;
+            grid-row-start: 3;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            border: 4px solid black;
+        }
+        .content-3{
+             background-color: blue;
+            text-align: center;
+            line-height: 150px;
+            color: white;
+            padding: 10px;font-family: cursive;
+            grid-row-start: 3;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 3;
+            border: 4px solid black;
+        }
+        .footer{
+             background-color: blue;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            font-family: cursive;
+            padding: 10px;
+            grid-row-start: 4;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            border: 4px solid black;
+        }
+    </style>
+</head>
+<body>
+   <div class="grid-container">
+    <div class="header">header</div>
+    <div class="sidebar">sidebar</div>
+    <div class="content-1">content-1</div>
+    <div class="content-2">content-2</div>
+    <div class="content-3">content-3</div>
+    <div class="footer">footer</div>
+   </div> 
+</body>
+</html>

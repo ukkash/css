@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            display: flex; /* it enable flex box*/
+            flex-direction: row; /*horizontal layout*/
+            justify-content: space-between; /*spread item horizontally*/
+            align-items: center; /*align item vertically*/
+            flex-wrap: wrap;/*allow item to wrap to the next line*/
+            height: 200px;
+            border: 2px solid black;
+            padding: 10px; 
+        }
+
+        .item{
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 400px;/*grow , shrink, basewidth*/
+            text-align: center;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- is an one dimensional layout system for arrangin
+    item in rows and columns -->
+
+    <h2>Flexbox Layout : Example</h2>
+
+    <div class="container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+    </div>
+
+</body>
+</html>

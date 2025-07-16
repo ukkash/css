@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .grid-container{
+            display: grid;/*enable grid layout*/
+            grid-template-columns: 1fr 1fr 1fr; /*3 equal colunmns*/
+            grid-template-rows: auto auto;/*2 rows(height auto adjust)*/
+            gap: 10px; /*space between items*/
+            padding: 20px;
+            background-color: white;
+
+        }
+        .grid-item{
+            background-color: steelblue;
+            color: white;
+            font-size: 1.5rem;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- it is two dimensional layout system for organizing item into rows and columns -->
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky</title>
+    <style>
+        .sticky{
+            position: sticky;
+            top: 0;
+            background: orange;
+            padding: 20px;
+            font-weight: bold;
+        }
+        .content{
+            height: 1000vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- sticky is hybrid b/w relative and fixed
+    element treatd as relative until it reach a certain scroll  position
+    then it stick like fixed to a defined position while scrolling
+    it only work within its parent container
+    once parent outof view the  sticky element also scroll away -->
+
+
+
+    <div class="sticky">stick to the top when u scroll</div>
+
+    <div class="content">
+        scroll down to see the effect
+    </div>
+</body>
+</html>

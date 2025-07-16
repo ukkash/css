@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            margin-top: 50px;
+            margin-left: 300px;
+            margin-right: 300px;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-template-rows: 60px 4fr 4fr 60px;
+            gap: 8px;
+            background-color: rgb(56, 56, 60);
+            padding: 10px;
+        }
+
+        .header {
+            padding: 10px;
+            background: linear-gradient(to right, rgb(86, 59, 139), rgb(128, 103, 198));
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            border: 4px solid black;
+            box-shadow:0 1px 10px  rgb(9, 7, 7);
+            
+        }
+
+        .side {
+            background: linear-gradient(to bottom, rgb(61, 175, 164), rgb(128, 103, 198));
+            text-align: center;
+            line-height: 300px;
+            color: white;
+            padding: 10px;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            border: 4px solid black;
+            box-shadow:0 1px 10px  rgb(9, 7, 7);
+
+
+        }
+
+        .c1 {
+            background: linear-gradient(to right, rgb(192, 94, 169), rgb(37, 9, 179));
+            text-align: center;
+            line-height: 150px;
+            color: white;
+            padding: 10px;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            border: 4px solid black;
+            box-shadow:0 1px 10px  rgb(9, 7, 7);
+
+
+        }
+
+        .c2 {
+            background: linear-gradient(to right, rgb(192, 94, 169), rgb(37, 9, 179));
+            text-align: center;
+            line-height: 150px;
+            color: white;
+            padding: 10px;
+            grid-row-start: 3;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            border: 4px solid black;
+            box-shadow:0 1px 10px  rgb(9, 7, 7);
+
+
+        }
+
+        .c3 {
+            background: linear-gradient(to right, rgb(192, 94, 169), rgb(37, 9, 179));
+            text-align: center;
+            line-height: 150px;
+            color: white;
+            padding: 10px;
+            grid-row-start: 3;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 3;
+            border: 4px solid black;
+            box-shadow:0 1px 10px  rgb(9, 7, 7);
+
+
+        }
+
+        .footer {
+            background: linear-gradient(to right, rgb(86, 59, 139), rgb(128, 103, 198));
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            padding: 10px;
+            grid-row-start: 4;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            border: 4px solid black;
+            box-shadow:0 1px 10px  rgb(9, 7, 7);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class="side">Sidebar</div>
+        <div class="c1">Content-1</div>
+        <div class="c2">Content-2</div>
+        <div class="c3">Content-3</div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+
+</html>
