@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: gold;
+            position:absolute ;
+            animation-name: bounce;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+
+        }
+        @keyframes bounce{
+            0%{
+                top: 0;
+            }
+            50%{
+                top: 150px;
+                background-color: brown;
+            }
+            100%{
+                top: 0;
+                background-color: yellow;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    </div>
+</body>
+</html>

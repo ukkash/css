@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before</title>
+    <style>
+        .quote::before{
+            content: "#";
+            color: brown;
+            font-size: 24px;
+         }                                 /* used to insert content before and after an element */
+        .quote::after{
+            content: "&";
+            color: blue;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, a?</p>
+</body>
+</html>
