@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[required] {
+            /*1.[attr]-has required*/
+            border: 2px solid red;
+
+        }
+
+        input[type="email"] {
+            /*2. [attr="value"]*/
+            background-color: aqua;
+        }
+
+        div[class~='highlit'] {
+            /*3. [attr~="value"]*/
+            background-color: yellow;
+        }
+
+        p[lang|="en"] {
+            /*4. [attr/="value"]-exact or start with*/
+            color: blue;
+        }
+
+        a[href^="https"]{   /*5. [attr^=value]-starts with*/
+            color: green;
+        }
+
+        a[href*="about"]{  /*7.[attr*=value]-contains value*/
+            font-weight: bold;
+            text-decoration: underline;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Css Attribute Selectors Demo</h2>
+
+    <input type="text" placeholder="your name" required><br><br>
+
+    <input type="email" placeholder="your email">
+
+
+    <div class="box highlit"> highlted box</div>
+
+    <p lang="en">English paragragph</p>
+
+    <a href="https://example.com/home">home page</a>
+
+    <a href="https://example.com/about">About me</a>
+</body>
+
+</html>

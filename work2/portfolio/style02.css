@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(https://img.freepik.com/premium-vector/blue-light-gradient-background-blue-white-gradient-background_58388-180.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-left: 560px;
+
+
+}
+
+.about-me h2 {
+    color: rgb(111, 111, 208);
+    text-align: center;
+}
+
+.about-me p {
+    color: rgb(19, 12, 12);
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+    margin: 10px 110px 10px 110px;
+}
+
+.profile {
+    color: black;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: white;
+    grid-column: span 1;
+    grid-row: 1;
+
+}
+
+.profile h4 {
+    color: rgb(86, 86, 229);
+}
+
+.skills {
+    color: white;
+    background-color: rgb(70, 70, 195);
+    padding: 20px;
+    grid-column: span 2;
+    grid-row: 1;
+
+}
+
+
+.education {
+    background-color: rgb(70, 70, 195);
+    padding: 20px;
+    color: aliceblue;
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+.education h5 {
+    color: rgb(112, 134, 255);
+}
+
+small {
+    margin-left: 130px;
+}
+
+.lang {
+    padding: 20px;
+    background-color: white;
+    grid-column: span 1;
+    grid-row: 2;
+
+
+}
+
+.contact {
+    font-size: small;
+    padding: 20px;
+    background-color: white;
+    grid-column: span 1;
+    grid-row: 3;
+
+}
+
+
+.experiences {
+    background-color: rgb(70, 70, 195);
+    color: white;
+    padding: 20px;
+    grid-column: span 2;
+    grid-row: 3;
+
+}
+
+.experiences h5 {
+    color: rgb(105, 105, 255);
+
+}
+
+.exp {
+    margin-left: 130px;
+}
