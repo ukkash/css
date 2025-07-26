@@ -1,0 +1,127 @@
+:root {
+    --main-color: orange;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./work2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.top-left {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+    list-style: none;
+    margin-right: 250px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav ul li a:hover {
+    color: var(--main-color);
+}
+
+
+.search {
+    margin-left: 20px;
+}
+
+.search input {
+    padding: 6px 10px;
+    border: 2px solid black;
+    background: transparent;
+    border-radius: 4px;
+}
+
+.search button {
+    padding: 6px 12px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 1px;
+}
+
+.content {
+    display: grid;
+    padding: 20px;
+    margin-right: 10px;
+    color: white;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    display: grid;
+    color: white;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5rem;
+}
+
+button {
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    background-color: var(--main-color);
+}
+
+.container {
+
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    width: 250px;
+    padding: 30px;
+    background: rgb(0, 0, 0,0.1);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    margin-top: -70px;
+    margin-bottom: 100px;
+}
+.container input{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+    
+}
+
+.container button {
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-right: 30px;
+}

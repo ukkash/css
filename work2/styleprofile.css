@@ -1,0 +1,135 @@
+*
+{
+    margin:0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+:root
+{
+  --main-color:rgb(2, 13, 31);
+  --padding-size:10px 30px;
+}
+body
+{
+    background: url(./mountain.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+.containerbig
+{
+    padding: 40px 20px;
+    text-align: center;
+}
+.profile-img
+{
+    width:160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid purple;
+}
+.hr
+{
+    width:70px;
+    margin:8px auto;
+}
+
+.container
+{
+    display: grid;
+    grid-template-areas: "summary skills skills"
+                        "education education languages"
+                        " contact experience experience ";
+    grid-template-columns: 3fr 1.5fr 2fr  ;
+    grid-template-rows: 250px 250px 250px;
+    gap:20px;
+    margin:30px 200px;
+}
+.summary {
+  grid-area: summary; 
+}
+.skills {
+  grid-area: skills;
+}
+.education {
+  grid-area: education;
+}
+.languages {
+  grid-area: languages;
+}
+.contact {
+  grid-area: contact;
+}
+.experience {
+  grid-area: experience;
+}
+
+.summary,.skills,.education,.languages,.contact,.experience
+{
+    padding: var(--padding-size);
+    background-color: white;
+    text-align: left;
+}
+.skills
+{
+    background-color:var(--main-color);
+    color: white;
+}
+.education
+{
+     background-color:var(--main-color);
+      color: white;
+}
+.experience
+{
+     background-color: var(--main-color);
+      color: white;
+}
+.progress-container
+{
+  margin-top:10px;
+}
+.progress-label
+{
+  margin: 8px 0 4px;
+
+}
+.progress-bar
+{
+  height: 15px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid white;
+}
+.progress-fill
+{
+  height: 100%;
+  text-align: right;
+  color: rgb(221, 204, 209);
+  background-color: purple;
+  
+}
+h2
+{
+    margin: 20px;   
+}
+p
+{
+    font-size: 15px;
+    margin: 15px;
+    line-height: 22px; 
+}
+.footer
+{
+    width:100%;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 30px;
+}

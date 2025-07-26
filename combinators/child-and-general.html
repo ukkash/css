@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .button{
-            font-family: 'Arial Narrow';
-            font-size: medium;
+        h2~p{
+            color: blue;
         }
-        .button:active{
-            color: red;
-            background-color: black;
+        div>p{
+            background-color: yellow;
         }
     </style>
 </head>
 <body>
-    <button class="button">Click Me</button>
+    <div>
+        <h2>head</h2>
+        <p>para 1</p>
+        <p>para 2</p>
+        <div>
+           <p>nested</p> 
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,32 @@
+.responsive-box{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* small device (phone) */
+
+@media (max-width:480px){
+    .responsive-box{
+        background-color: brown;
+        color: burlywood;
+    }
+}
+
+/* medium devices (tablets) */
+
+@media (min-width:481px) and (max-width:768px){
+    .responsive-box{
+        background-color: green;
+
+
+    }
+}
+
+/* Large devices */
+@media (min-width:769px){
+    .responsive-box{
+        background-color: blueviolet;
+        font-size: 24px;
+    }
+}
