@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contents{
+            background-color: lightblue;
+            padding: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+        /* applies when viewwed on screen  */
+        @media screen and (max-width:600px){
+            .contents{
+                background-color: orange;
+                font-size: 16px;
+                
+            }
+        }
+
+        @media print{
+            .contents{
+                background-color:blue;
+                color: burlywood;
+                font-size: 12px;
+                border: 1px solid brown;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contents">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, ducimus!
+
+    </div>
+</body>
+</html>
